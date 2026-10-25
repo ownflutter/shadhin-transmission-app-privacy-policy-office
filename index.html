@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Privacy Policy – Shadhin Transmission</title>
+  <title>Privacy Policy – ISP Transmission</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
   <style>
     :root {
@@ -17,7 +17,6 @@
       --muted: #8892a4;
       --tag-admin: #ef4444;
       --tag-super: #f59e0b;
-      --tag-survey: #40A87B;
       --tag-tech: #3b82f6;
     }
 
@@ -139,7 +138,6 @@
 
     .badge-admin   { background: rgba(239,68,68,0.15);  color: #ef4444; border: 1px solid rgba(239,68,68,0.3); }
     .badge-super   { background: rgba(245,158,11,0.15); color: #f59e0b; border: 1px solid rgba(245,158,11,0.3); }
-    .badge-survey  { background: rgba(64,168,123,0.15); color: #40A87B; border: 1px solid rgba(64,168,123,0.3); }
     .badge-tech    { background: rgba(59,130,246,0.15);  color: #3b82f6; border: 1px solid rgba(59,130,246,0.3); }
 
     /* ── BODY CARD ── */
@@ -223,6 +221,10 @@
       margin: 20px 0;
     }
 
+    .role-grid .role-card:last-child:nth-child(odd) {
+      grid-column: 1 / -1;
+    }
+
     .role-card {
       background: var(--surface2);
       border: 1px solid var(--border);
@@ -249,7 +251,6 @@
 
     .dot-admin   { background: var(--tag-admin); box-shadow: 0 0 6px var(--tag-admin); }
     .dot-super   { background: var(--tag-super); box-shadow: 0 0 6px var(--tag-super); }
-    .dot-survey  { background: #40A87B; box-shadow: 0 0 6px #40A87B; }
     .dot-tech    { background: var(--tag-tech); box-shadow: 0 0 6px var(--tag-tech); }
 
     .role-card ul { margin: 0; }
@@ -365,15 +366,14 @@
   <!-- HEADER -->
   <div class="header">
     <div class="header-logo">
-      <img src="appLogo.png" alt="Shadhin Transmission" onerror="this.style.display='none';this.parentNode.innerHTML='⚙️';this.parentNode.style.display='flex';this.parentNode.style.alignItems='center';this.parentNode.style.justifyContent='center';this.parentNode.style.fontSize='2rem';">
+      <img src="appLogo.png" alt="ISP Transmission" onerror="this.style.display='none';this.parentNode.innerHTML='⚙️';this.parentNode.style.display='flex';this.parentNode.style.alignItems='center';this.parentNode.style.justifyContent='center';this.parentNode.style.fontSize='2rem';">
     </div>
     <div class="header-text">
-      <h1>Shadhin <span>Transmission</span></h1>
+      <h1>ISP <span>Transmission</span></h1>
       <p>Privacy Policy &nbsp;·&nbsp; Effective: April 5, 2026</p>
       <div class="badge-row">
         <span class="badge badge-admin">Admin</span>
         <span class="badge badge-super">Supervisor</span>
-        <span class="badge badge-survey">Surveyor</span>
         <span class="badge badge-tech">Technician</span>
       </div>
     </div>
@@ -388,8 +388,8 @@
         <span class="icon icon-amber"><i class="fas fa-moon"></i></span>
         1. Introduction
       </div>
-      <p>This Privacy Policy describes how <strong>Shadhin Transmission</strong> ("the App", "we", "our") collects, uses, stores, and protects information when you use our field operations management platform. The App serves four distinct roles — <strong>Admin, Supervisor, Surveyor,</strong> and <strong>Technician</strong> — along with an <strong>HQ Inventory</strong> module, enabling coordinated task management, workflow oversight, and real-time field reporting.</p>
-      <p>By accessing or using Shadhin Transmission, you agree to the practices described in this policy. Please read it carefully.</p>
+      <p>This Privacy Policy describes how <strong>ISP Transmission</strong> ("the App", "we", "our") collects, uses, stores, and protects information when you use our field operations management platform. The App serves three distinct roles — <strong>Admin, Supervisor,</strong> and <strong>Technician</strong> — along with an <strong>HQ Inventory</strong> module, enabling coordinated task management, workflow oversight, and real-time field reporting.</p>
+      <p>By accessing or using ISP Transmission, you agree to the practices described in this policy. Please read it carefully.</p>
     </div>
 
     <!-- 2. User Roles & Data Access -->
@@ -421,21 +421,9 @@
           </div>
           <ul>
             <li>Oversee assigned team tasks</li>
-            <li>Monitor Surveyor & Technician activity</li>
+            <li>Monitor Technician activity</li>
             <li>Approve or escalate field updates</li>
             <li>View team-level inventory usage</li>
-          </ul>
-        </div>
-        <div class="role-card">
-          <div class="role-card-title">
-            <span class="role-dot dot-survey"></span>
-            <span style="color:#10b981;">Surveyor</span>
-          </div>
-          <ul>
-            <li>Submit field survey reports</li>
-            <li>Upload site photos & findings</li>
-            <li>View own assigned tasks only</li>
-            <li>Log location for site visits</li>
           </ul>
         </div>
         <div class="role-card">
@@ -453,7 +441,7 @@
       </div>
 
       <div class="notice">
-        <strong>Role Isolation:</strong> Users only see data relevant to their role. Surveyors and Technicians cannot access Admin dashboards or other users' records. Data access is enforced server-side.
+        <strong>Role Isolation:</strong> Users only see data relevant to their role. Technicians cannot access Admin dashboards or other users' records. Data access is enforced server-side.
       </div>
     </div>
 
@@ -486,13 +474,13 @@
           </tr>
           <tr>
             <td>Location Data</td>
-            <td>GPS coordinates captured during active field operations (site visits, surveys). Used for task verification and reporting. <strong>Not tracked in background.</strong></td>
-            <td>Surveyor, Technician</td>
+            <td>GPS coordinates captured during active field operations (site visits). Used for task verification and reporting. <strong>Not tracked in background.</strong></td>
+            <td>Technician</td>
           </tr>
           <tr>
             <td>Media Uploads</td>
             <td>Photos or documents uploaded as part of field reports or task submissions.</td>
-            <td>Surveyor, Technician</td>
+            <td>Technician</td>
           </tr>
           <tr>
             <td>Inventory Records</td>
@@ -518,7 +506,7 @@
         <li>To authenticate users and enforce role-based access permissions</li>
         <li>To enable Admins to assign, track, and manage employee tasks across all roles</li>
         <li>To allow Supervisors to monitor team progress and approve updates</li>
-        <li>To facilitate field data collection (surveys, site reports, task completions) by Surveyors and Technicians</li>
+        <li>To facilitate field data collection (site reports, task completions) by Technicians</li>
         <li>To manage HQ Inventory — tracking item requests, allocations, and usage</li>
         <li>To generate operational reports and performance overviews for Admin and Supervisor roles</li>
         <li>To send in-app notifications for task assignments, updates, and alerts</li>
@@ -527,7 +515,7 @@
       </ul>
 
       <div class="notice amber">
-        <strong>We do not use your data for advertising, marketing, or selling to third parties.</strong> All data use is strictly limited to operating and improving the Shadhin Transmission platform.
+        <strong>We do not use your data for advertising, marketing, or selling to third parties.</strong> All data use is strictly limited to operating and improving the ISP Transmission platform.
       </div>
     </div>
 
@@ -555,10 +543,10 @@
         <span class="icon icon-teal"><i class="fas fa-map-marker-alt"></i></span>
         6. Location Data
       </div>
-      <p>Location access is used only when a Surveyor or Technician is actively performing a field task within the app. Specifically:</p>
+      <p>Location access is used only when a Technician is actively performing a field task within the app. Specifically:</p>
       <ul>
         <li>Location is captured <strong>only in the foreground</strong> — never tracked silently in the background</li>
-        <li>Location data is attached to specific task or survey submissions for verification purposes</li>
+        <li>Location data is attached to specific task submissions for verification purposes</li>
         <li>Admins and Supervisors may view location data tied to task records — not live tracking</li>
         <li>Users are notified when location is being accessed via their device's standard permission prompts</li>
       </ul>
@@ -635,7 +623,7 @@
           </tr>
           <tr>
             <td>Location (Foreground)</td>
-            <td>Used during active field tasks by Surveyors & Technicians for task geo-tagging</td>
+            <td>Used during active field tasks by Technicians for task geo-tagging</td>
           </tr>
           <tr>
             <td>Camera / Storage</td>
@@ -656,7 +644,7 @@
         <span class="icon icon-green"><i class="fas fa-child"></i></span>
         11. Children's Privacy
       </div>
-      <p>Shadhin Transmission is a professional workforce management tool intended solely for use by employed adults. We do not knowingly collect data from anyone under the age of 18. If such data is inadvertently collected, it will be deleted promptly upon discovery.</p>
+      <p>ISP Transmission is a professional workforce management tool intended solely for use by employed adults. We do not knowingly collect data from anyone under the age of 18. If such data is inadvertently collected, it will be deleted promptly upon discovery.</p>
     </div>
 
     <!-- 12. Policy Updates -->
@@ -680,7 +668,7 @@
         <span class="icon icon-amber"><i class="fas fa-handshake"></i></span>
         13. Consent
       </div>
-      <p>By using the Shadhin Transmission app — whether as Admin, Supervisor, Surveyor, or Technician — you acknowledge that you have read, understood, and agreed to this Privacy Policy. Organizational Admins are responsible for ensuring that all platform users within their team are informed of this policy.</p>
+      <p>By using the ISP Transmission app — whether as Admin, Supervisor, or Technician — you acknowledge that you have read, understood, and agreed to this Privacy Policy. Organizational Admins are responsible for ensuring that all platform users within their team are informed of this policy.</p>
     </div>
 
     <!-- Contact -->
@@ -688,11 +676,11 @@
       <h3><i class="fas fa-headset" style="color:var(--accent);margin-right:8px;"></i>Contact & Support</h3>
       <p style="color:var(--muted);margin-bottom:16px;">For privacy-related requests, data inquiries, or support:</p>
       <p><strong>Email:</strong> <a href="mailto:apps@plexus.com.bd">apps@plexus.com.bd</a></p>
-  
+    </div>
 
     <!-- Footer -->
     <div class="footer">
-      <p style="margin-top:10px;">© 2026 Shadhin Transmission · All rights reserved.</p>
+      <p style="margin-top:10px;">© 2026 ISP Transmission · All rights reserved.</p>
     </div>
 
   </div>
